@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      /* Agrega un estilo opcional para el desplazamiento suave */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <nav
+        class="navbar navbar-expand-lg bg-primary fixed-top"
+        data-bs-theme="dark"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Mi Portafolio</a>
           <button
@@ -25,13 +34,13 @@
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link" href="#inicio">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de mí</a>
+                <a class="nav-link" href="#acerca">Acerca de mí</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -44,8 +53,10 @@
                   >Más</a
                 >
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Portafolio</a>
-                  <a class="dropdown-item" href="#">Proyectos Personales</a>
+                  <a class="dropdown-item" href="#portafolio">Portafolio</a>
+                  <a class="dropdown-item" href="#proyectos"
+                    >Proyectos Personales</a
+                  >
                 </div>
               </li>
             </ul>
@@ -55,6 +66,54 @@
     </header>
 
     <!-- Aquí puedes agregar el contenido de tu página -->
+    <div style="margin-top: 80px">
+      <section id="inicio" class="py-5 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <!-- Agrega tu imagen de perfil o logotipo aquí -->
+              <img
+                src="img/foto.jpeg"
+                alt="Tu Imagen"
+                class="img-fluid rounded-circle mb-4"
+              />
+
+              <!-- Título y breve descripción -->
+              <h1 class="display-4">¡Bienvenido a Mi Portafolio!</h1>
+              <p class="lead">
+                Soy Andrés Tolentino Hernández, un desarrollador apasionado por
+                crear soluciones digitales.
+              </p>
+
+              <!-- Llamado a la acción -->
+              <a href="#portafolio" class="btn btn-primary btn-lg"
+                >Explora mi Portafolio</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="acerca">
+        <h1>Acerca de mí</h1>
+        <!-- Contenido de la sección "Acerca de mí" -->
+      </section>
+
+      <section id="contacto">
+        <h1>Contacto</h1>
+        <!-- Contenido de la sección "Contacto" -->
+      </section>
+
+      <section id="portafolio">
+        <h1>Portafolio</h1>
+        <!-- Contenido de la sección "Portafolio" -->
+      </section>
+
+      <section id="proyectos">
+        <h1>Proyectos Personales</h1>
+        <!-- Contenido de la sección "Proyectos Personales" -->
+      </section>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
