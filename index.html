@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <style>
       /* Agrega un estilo opcional para el desplazamiento suave */
       html {
@@ -37,16 +38,13 @@
                 <a class="nav-link" href="#inicio">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#acerca">Sobre mí</a>
+                <a class="nav-link" href="#habilidades-herramientas">Habilidades y Herramientas</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#experiencia">Experiencia laboral</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#habilidades">Habilidades</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#educacion">Educación</a>
@@ -66,6 +64,7 @@
       <section id="inicio" class="py-5 text-center">
         <div class="container">
           <div class="row">
+            <!-- Columna para la imagen -->
             <div class="col-md-6 mx-auto">
               <!-- Agrega tu imagen de perfil o logotipo aquí -->
               <img
@@ -73,81 +72,61 @@
                 alt="Tu Imagen"
                 class="img-fluid rounded-circle mb-4"
               />
-
-              <!-- Título y breve descripción -->
+            </div>
+            <!-- Columna para el contenido -->
+            <div class="col-md-6 mx-auto">
+              <!-- Título y descripción personal -->
               <h1 class="display-4">¡Bienvenido a Mi Portafolio!</h1>
               <p class="lead">
-                Soy Andrés Tolentino Hernández, un desarrollador apasionado por
-                crear soluciones digitales.
+                Soy Andrés Tolentino Hernández, un Ingeniero en Sistemas
+                Computacionales con un fuerte enfoque en desarrollo web, diseño
+                de bases de datos, análisis de datos e inteligencia artificial.
+                Mi pasión por aprender y mantenerme al día con las últimas
+                tecnologías me ha llevado a desarrollar habilidades sólidas en
+                estas áreas.
               </p>
-
               <!-- Llamado a la acción -->
-              <a href="#portafolio" class="btn btn-primary btn-lg"
-                >Explora mi Portafolio</a
+              <a
+                href="archivos/CV_AndresTolentinoHernandez.pdf"
+                class="btn btn-primary btn-lg"
               >
+                Descarga mi CV
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Sección de Sobre Mí -->
-      <section id="acerca" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <!-- Título de la sección -->
-              <h2 class="text-center">Acerca de mí</h2>
-              <hr class="my-4" />
+<!-- Sección de Habilidades y Herramientas -->
+<section id="habilidades-herramientas" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <!-- Título de la sección centrado -->
+        <h2 class="text-center">Habilidades y Herramientas</h2>
+        <hr class="my-4" />
 
-              <!-- Descripción personal -->
-              <p>
-                Soy un Ingeniero en Sistemas Computacionales con un fuerte
-                enfoque en desarrollo web, diseño de bases de datos, análisis de
-                datos e inteligencia artificial. Mi pasión por aprender y
-                mantenerme al día con las últimas tecnologías me ha llevado a
-                desarrollar habilidades sólidas en estas áreas.
-              </p>
+        <!-- Lista de Habilidades -->
+        <h3>Habilidades:</h3>
+        <ul>
+          <li>Desarrollo web frontend y backend.</li>
+          <li>Programación en lenguajes como JavaScript, Python, Java, etc.</li>
+          <li>Diseño y administración de bases de datos SQL y NoSQL.</li>
+          <!-- Agrega más habilidades aquí -->
+        </ul>
 
-              <!-- Habilidades destacadas -->
-              <h3>Habilidades Destacadas</h3>
-              <ul>
-                <li>
-                  Desarrollo web: Creación de sitios web atractivos y
-                  funcionales.
-                </li>
-                <li>
-                  Diseño de bases de datos: Diseño eficiente de bases de datos
-                  para aplicaciones.
-                </li>
-                <li>
-                  Análisis de datos: Extracción de información valiosa a partir
-                  de conjuntos de datos.
-                </li>
-                <li>
-                  Inteligencia Artificial: Interés y conocimientos en IA y
-                  aprendizaje automático.
-                </li>
-                <li>
-                  Comunicación: Habilidades sólidas de comunicación verbal y
-                  escrita.
-                </li>
-                <li>
-                  Trabajo en equipo: Capacidad para colaborar y contribuir en
-                  equipos multidisciplinarios.
-                </li>
-                <li>
-                  Resolución de problemas: Abordaje efectivo de desafíos
-                  técnicos y lógicos.
-                </li>
-                <li>
-                  Gestión del tiempo: Habilidad para organizar y priorizar
-                  tareas de manera eficaz.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Lista de Herramientas -->
+        <h3>Herramientas:</h3>
+        <ul>
+          <li>Frameworks de desarrollo web (por ejemplo, React, Angular, Node.js).</li>
+          <li>Bibliotecas de aprendizaje automático (TensorFlow, Keras, PyTorch).</li>
+          <li>Sistemas de gestión de bases de datos (MySQL, PostgreSQL, MongoDB).</li>
+          <!-- Agrega más herramientas aquí -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- Sección de Proyectos Destacados -->
       <section id="proyectos">
@@ -157,46 +136,68 @@
             <!-- Proyecto Destacado 1 -->
             <div class="col-md-4">
               <div class="card mb-4">
-                <img src="proyecto-destacado1-imagen.jpg" class="card-img-top" alt="Proyecto Destacado 1">
+                <img
+                  src="proyecto-destacado1-imagen.jpg"
+                  class="card-img-top"
+                  alt="Proyecto Destacado 1"
+                />
                 <div class="card-body text-center">
                   <h5 class="card-title">Proyecto Destacado 1</h5>
-                  <p class="card-text">Descripción breve del proyecto destacado.</p>
-                  <a href="proyecto-destacado1.html" class="btn btn-primary">Más detalles</a>
+                  <p class="card-text">
+                    Descripción breve del proyecto destacado.
+                  </p>
+                  <a href="proyecto-destacado1.html" class="btn btn-primary"
+                    >Más detalles</a
+                  >
                 </div>
               </div>
             </div>
-      
+
             <!-- Proyecto Destacado 2 -->
             <div class="col-md-4">
               <div class="card mb-4">
-                <img src="proyecto-destacado2-imagen.jpg" class="card-img-top" alt="Proyecto Destacado 2">
+                <img
+                  src="proyecto-destacado2-imagen.jpg"
+                  class="card-img-top"
+                  alt="Proyecto Destacado 2"
+                />
                 <div class="card-body text-center">
                   <h5 class="card-title">Proyecto Destacado 2</h5>
-                  <p class="card-text">Descripción breve del proyecto destacado.</p>
-                  <a href="proyecto-destacado2.html" class="btn btn-primary">Más detalles</a>
+                  <p class="card-text">
+                    Descripción breve del proyecto destacado.
+                  </p>
+                  <a href="proyecto-destacado2.html" class="btn btn-primary"
+                    >Más detalles</a
+                  >
                 </div>
               </div>
             </div>
-      
+
             <!-- Proyecto Personal 1 -->
             <div class="col-md-4">
               <div class="card mb-4">
-                <img src="proyecto-personal1-imagen.jpg" class="card-img-top" alt="Proyecto Personal 1">
+                <img
+                  src="proyecto-personal1-imagen.jpg"
+                  class="card-img-top"
+                  alt="Proyecto Personal 1"
+                />
                 <div class="card-body text-center">
                   <h5 class="card-title">Proyecto Personal 1</h5>
-                  <p class="card-text">Descripción breve del proyecto personal.</p>
-                  <a href="proyecto-personal1.html" class="btn btn-primary">Más detalles</a>
+                  <p class="card-text">
+                    Descripción breve del proyecto personal.
+                  </p>
+                  <a href="proyecto-personal1.html" class="btn btn-primary"
+                    >Más detalles</a
+                  >
                 </div>
               </div>
             </div>
-      
+
             <!-- Puedes agregar más proyectos aquí -->
-            
           </div>
         </div>
       </section>
-      
-      
+
 
       <!-- Sección de Experiencia Laboral -->
       <section id="experiencia" class="py-5">
@@ -209,60 +210,6 @@
         </div>
       </section>
 
-      <!-- Sección de Habilidades -->
-      <section id="habilidades" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <!-- Contenido de la sección "Habilidades" -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección de Educación -->
-      <section id="educacion" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <!-- Contenido de la sección "Educación" -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección de Certificaciones -->
-      <section id="certificaciones" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <!-- Contenido de la sección "Certificaciones" -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección de Experiencia Laboral -->
-      <section id="experiencia" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <!-- Contenido de la sección "Experiencia Laboral" -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección de Habilidades -->
-      <section id="habilidades" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <!-- Contenido de la sección "Habilidades" -->
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Sección de Educación -->
       <section id="educacion" class="py-5">
